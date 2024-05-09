@@ -22,10 +22,11 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-black font-sans antialiased dark",
+          "min-h-screen font-sans antialiased dark bg-dot-white/[0.2]",
           fontSans.variable
         )}
       >
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         {children}
       </body>
     </html>
