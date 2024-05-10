@@ -5,19 +5,16 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
 import Image from "next/image";
-import { Button, buttonVariants } from "./ui/button";
+import { buttonVariants } from "./ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 import { ArrowDownRight, MousePointer2 } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { Separator } from "@/components/ui/separator";
 import NutritionValues from "./nutrition-values";
 
 export default function Carousel({ data }: any) {
@@ -38,8 +35,8 @@ export default function Carousel({ data }: any) {
                 <Image
                   src={item.recipe.images.LARGE.url}
                   alt={item.recipe.label}
-                  width={500}
-                  height={500}
+                  width={600}
+                  height={600}
                   className="rounded-md"
                   priority
                 />

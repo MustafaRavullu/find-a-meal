@@ -37,7 +37,22 @@ export default async function Page({
         </header>
       </MaxWidthWrapper>
       <div className="flex-1 flex items-center justify-center">
-        <Carousel data={data.hits} />
+        {data.hits.length === 0 ? (
+          <div className="flex flex-col gap-2">
+            <span className="text-center text-sm flex items-center">
+              Sorry! We could not find anything{" "}
+              <span className="text-xl">🤔</span>
+            </span>
+            <Link
+              href={"/"}
+              className={cn(buttonVariants({ variant: "default" }))}
+            >
+              Try something different
+            </Link>
+          </div>
+        ) : (
+          <Carousel data={data.hits} />
+        )}
       </div>
     </main>
   );
