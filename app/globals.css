@@ -59,3 +59,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.SelectContent {
+  max-height: var(--radix-select-content-available-height);
+}

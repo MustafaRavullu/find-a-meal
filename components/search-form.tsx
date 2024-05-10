@@ -66,7 +66,7 @@ export function SearchForm() {
                     <SelectValue placeholder="Select a diet type" />
                   </SelectTrigger>
                 </FormControl>
-                <SelectContent>
+                <SelectContent className="SelectContent">
                   {dietTypes.map((item) => (
                     <SelectItem key={item.value} value={item.value}>
                       {item.label}
@@ -90,7 +90,7 @@ export function SearchForm() {
                     <SelectValue placeholder="Select a cuisine type" />
                   </SelectTrigger>
                 </FormControl>
-                <SelectContent>
+                <SelectContent className="SelectContent">
                   {cuisineTypes.map((item) => (
                     <SelectItem value={item.value} key={item.value}>
                       {item.label}
@@ -114,7 +114,7 @@ export function SearchForm() {
                     <SelectValue placeholder="Select a meal type" />
                   </SelectTrigger>
                 </FormControl>
-                <SelectContent>
+                <SelectContent className="SelectContent">
                   {mealTypes.map((item) => (
                     <SelectItem key={item.value} value={item.value}>
                       {item.label}
