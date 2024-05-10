@@ -30,7 +30,7 @@ export default function Carousel({ data }: any) {
       {data.map((item: any, index: number) => (
         <SwiperSlide key={index} className="rounded-md">
           <div className="h-full  flex flex-col justify-center items-center">
-            <Card className="">
+            <Card className="bg-[#1d1d1f]">
               <CardHeader className="p-3">
                 <Image
                   src={item.recipe.images.LARGE.url}
