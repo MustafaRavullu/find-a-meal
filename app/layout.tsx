@@ -26,7 +26,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+        <div className="hidden sm:flex absolute pointer-events-none inset-0  items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)]"></div>
         {children}
       </body>
     </html>
